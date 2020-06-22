@@ -33,6 +33,14 @@
                 <div class="lboard_main_heading">
                     <h2>Leaderboard</h2>
                 </div>
+                <div id="users">
+                  <input class="search" placeholder="Search" />
+                    <button class="sort" data-sort="slack-username">
+                        Sort by Name
+                    </button>
+                    <button class="sort" data-sort="point">
+                        Sort by Point
+                    </button>
                 <div class="lboard_main_title">
                     <span>Position</span>
                     <span>Names</span>
@@ -44,9 +52,18 @@
                     <!-- will be added from JSON -->
                 </div>
             </div>
+          </div>
         </div>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script>
+      var options = {
+          valueNames: [ 'slack-username', 'point' ]
+        };
+          var userList = new List('users', options);
+    </script>
     <script src="bundle.js"></script>
+    
 </body>
 
 </html>
