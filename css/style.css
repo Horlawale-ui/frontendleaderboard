@@ -109,3 +109,28 @@ body {
     margin-left: 10px;
 }
 
+/* Animation for Top 3*/
+.pos1 {
+    animation-name: pos_one;
+    animation-duration: 3s; 
+}
+@keyframes pos_one {
+    from {background-color: #F6AF37;}
+    to {background-color: gold; }
+}
+.pos2 {
+    animation-name: pos_two;
+    animation-duration: 3s; 
+}
+@keyframes pos_two {
+    from {background-color: #BEBBBB;}
+    to {background-color: silver; }
+}
+.pos3 {
+    animation-name: pos_three;
+    animation-duration: 3s; 
+}
+@keyframes pos_three {
+    from {background-color: #B2967A;}
+    to {background-color: brown; }
+}
