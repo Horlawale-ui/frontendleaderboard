@@ -1,0 +1,111 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+}
+
+/* HEADING */
+.heading {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+.heading img {
+    width: 29px;
+    height: 40px;
+    margin-right: 10px;
+}
+.heading h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+}
+.heading p {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+/* LEADERBOARD SECTION */
+.lboard_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+.lboard_period {
+    display: grid;
+    justify-items: center;
+}
+.lboard_period li {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+}
+.lboard_period li:hover {
+    color: #F6AF37;
+    border-bottom: 2px solid #F6AF37;
+}
+.period--active {
+    border-bottom: 2px solid #F6AF37;
+}
+.lboard_main {
+    background: rgba(184, 200, 218, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+.lboard_main_heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.lboard_main_title {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.lboard_main_list {
+    display: grid;
+    grid-gap: 20px;
+}
+.lboard_main_item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    background: rgba(184, 200, 218, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+.lboard_main_item .position {
+    padding: 20px;
+    margin-right: 10px;
+}
+.lboard_main_item .pos1 {
+    background: #F6AF37;
+}
+.lboard_main_item .pos2 {
+    background: #BEBBBB;
+}
+.lboard_main_item .pos3 {
+    background: #B2967A;
+}
+.lboard_main_item .name {
+    display: flex;
+    align-items: center;
+}
+.lboard_main_item .name img {
+    width: 50px;
+    height: 50px;
+}
+.lboard_main_item .name p {
+    margin-left: 10px;
+}
+
