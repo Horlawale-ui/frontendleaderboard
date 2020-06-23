@@ -34,36 +34,30 @@
                     <h2>Leaderboard</h2>
                 </div>
                 <div id="users">
-                  <input class="search" placeholder="Search" />
-                    <button class="sort" data-sort="slack-username">
+                    <input class="search" placeholder="Search" />
+                    <button class="sort" id="sort_by_name">
                         Sort by Name
                     </button>
-                    <button class="sort" data-sort="point">
+                    <button class="sort" id="sort_by_points">
                         Sort by Point
                     </button>
-                <div class="lboard_main_title">
-                    <span>Position</span>
-                    <span>Names</span>
-                    <span>Slack username</span>
-                    <span>Points</span>
-                    <span>Share</span>
-                </div>
-                <div class="lboard_main_list">
-                    <!-- will be added from JSON -->
+                    <div class="lboard_main_title">
+                        <span>Position</span>
+                        <span>Names</span>
+                        <span>Slack username</span>
+                        <span>Points</span>
+                        <span>Share</span>
+                    </div>
+                    <div class="lboard_main_list">
+                        <!-- will be added from JSON -->
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
     </div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-    <script>
-      var options = {
-          valueNames: [ 'slack-username', 'point' ]
-        };
-          var userList = new List('users', options);
-    </script>
+
     <script src="bundle.js"></script>
-    
+
 </body>
 
 </html>
