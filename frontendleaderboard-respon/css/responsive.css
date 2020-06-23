@@ -1,0 +1,30 @@
+/* Screen from 1159px and above  */
+@media only screen and (max-width: 1159px) {
+    .lboard_content {
+        padding: 2% 3%;
+    }
+}
+/* Screen from 609px to 1159px */
+@media only screen and (max-width: 608px) {
+    input {
+        width: 150px;
+    }
+    .sort {
+        padding: 8px 15px;
+    }
+}
+/* Screen from 571px to 608px */
+@media only screen and (max-width: 570px) {
+    #share_title {
+        display: none;
+    }
+    .lboard_main_title {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .share {
+        display: none;
+    }
+    .lboard_main_item {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
