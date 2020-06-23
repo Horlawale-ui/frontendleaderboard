@@ -24,7 +24,7 @@ const compileData = data => {
                     <div class="lboard_main_item">
                         <p class="position">${index}</p>
                         <div class="name">
-                            <img src="img/Ellipse%204.png" alt="picture">
+                            <img src="img/Ellipse${Math.floor(Math.random() * 5)}.png" alt="picture">
                             <p>${entry.gsx$fullname.$t}</p>
                         </div>
                         <p class="slack-username">${entry.gsx$username.$t}</p>

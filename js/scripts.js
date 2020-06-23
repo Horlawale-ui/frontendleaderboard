@@ -23,13 +23,13 @@ const compileData = data => {
                     <div class="lboard_main_item">
                         <p class="position">${index}</p>
                         <div class="name">
-                            <img src="img/Ellipse%204.png" alt="picture">
+                            <img src="img/Ellipse${Math.floor(Math.random() * 5)}.png" alt="picture">
                             <p>${entry.gsx$fullname.$t}</p>
                         </div>
                         <p class="slack-username">${entry.gsx$username.$t}</p>
                         <p class="point">${entry.gsx$totalpoints.$t}</p>
                         <div class="share">
-                            <a href="#"><img src="img/Vector.png" alt=""></a>
+                            <a href="https://twitter.com/intent/tweet?text=Hey!%20I%20am%20ranked%20number%20${index}%20on%20the%20current%20@hnginternship%20board%20with%20${entry.gsx$totalpoints.$t}%20points."><img src="img/Vector.png" alt=""></a>
                         </div>
                     </div>`
         });
