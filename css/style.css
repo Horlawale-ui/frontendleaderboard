@@ -33,28 +33,7 @@ body {
 
 /* LEADERBOARD SECTION */
 .lboard_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 2% 10%;
-}
-.lboard_period {
-    display: grid;
-    justify-items: center;
-}
-.lboard_period li {
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    list-style: none;
-}
-.lboard_period li:hover {
-    color: #F6AF37;
-    border-bottom: 2px solid #F6AF37;
-}
-.period--active {
-    border-bottom: 2px solid #F6AF37;
 }
 .lboard_main {
     background: rgba(184, 200, 218, 0.2);
@@ -83,19 +62,25 @@ body {
     background: rgba(184, 200, 218, 0.5);
     border-radius: 10px;
     padding: 10px;
+    transform: scale(1);
+    transition: transform 0.5s;
 }
+.lboard_main_item:hover {
+    transform: scale(1.02);
+}
+
 .lboard_main_item .position {
     padding: 20px;
     margin-right: 10px;
 }
 .lboard_main_item .pos1 {
-    background: #F6AF37;
+    background: gold;
 }
 .lboard_main_item .pos2 {
-    background: #BEBBBB;
+    background: silver;
 }
 .lboard_main_item .pos3 {
-    background: #B2967A;
+    background: brown;
 }
 .lboard_main_item .name {
     display: flex;
@@ -109,28 +94,3 @@ body {
     margin-left: 10px;
 }
 
-/* Animation for Top 3*/
-.pos1 {
-    animation-name: pos_one;
-    animation-duration: 3s; 
-}
-@keyframes pos_one {
-    from {background-color: #F6AF37;}
-    to {background-color: gold; }
-}
-.pos2 {
-    animation-name: pos_two;
-    animation-duration: 3s; 
-}
-@keyframes pos_two {
-    from {background-color: #BEBBBB;}
-    to {background-color: silver; }
-}
-.pos3 {
-    animation-name: pos_three;
-    animation-duration: 3s; 
-}
-@keyframes pos_three {
-    from {background-color: #B2967A;}
-    to {background-color: brown; }
-}

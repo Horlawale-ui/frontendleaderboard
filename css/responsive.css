@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1091px) {
+	.lboard_content {
+    	padding: 2% 5%;
+	}
+}
+@media only screen and (max-width: 968px) {
+	.share {
+		display: none;
+	}
+	.lboard_main_item {
+    grid-template-columns: repeat(4, 1fr);
+	}
+	#share_title {
+		display: none;
+	}
+	.lboard_main_title {
+    grid-template-columns: repeat(4, 1fr);
+	}
+}
