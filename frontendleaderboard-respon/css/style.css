@@ -21,7 +21,7 @@ input:focus {
 
 /* sort buttons */
 .sort {
-  padding:8px 30px;
+  padding: 8px 30px;
   border-radius: 6px;
   border:none;
   display:inline-block;
@@ -61,17 +61,18 @@ input:focus {
     height: 40px;
     margin-right: 10px;
 }
-.heading h1 {
+.heading_text h1 {
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     line-height: 33px;
 }
-.heading p {
+.heading_text p {
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
     line-height: 19px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /* LEADERBOARD SECTION */
@@ -119,13 +120,13 @@ input:focus {
     margin-right: 10px;
 }
 .lboard_main_item .pos1 {
-    background: gold;
+    background: #F6AF37;
 }
 .lboard_main_item .pos2 {
-    background: silver;
+    background: #BEBBBB;
 }
 .lboard_main_item .pos3 {
-    background: brown;
+    background: #B2967A;
 }
 .lboard_main_item .name {
     display: flex;
@@ -139,3 +140,28 @@ input:focus {
     margin-left: 10px;
 }
 
+/* Animation for Top 3*/
+.pos1 {
+    animation-name: pos_one;
+    animation-duration: 3s; 
+}
+@keyframes pos_one {
+    from {background-color: #F6AF37;}
+    to {background-color: gold; }
+}
+.pos2 {
+    animation-name: pos_two;
+    animation-duration: 3s; 
+}
+@keyframes pos_two {
+    from {background-color: #BEBBBB;}
+    to {background-color: silver; }
+}
+.pos3 {
+    animation-name: pos_three;
+    animation-duration: 3s; 
+}
+@keyframes pos_three {
+    from {background-color: #B2967A;}
+    to {background-color: brown; }
+}
