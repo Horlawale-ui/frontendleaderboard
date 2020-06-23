@@ -131,8 +131,8 @@ function sortByNames() {
 
 
 function comaparePoints(a, b) {
-    const pointsA = parseInt(a.points);
-    const pointsB = parseInt(b.points);
+    const pointsA = parseFloat(a.points);
+    const pointsB = parseFloat(b.points);
 
     let comparison = 0;
     if (pointsA < pointsB) {
