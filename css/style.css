@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 /* search */
@@ -76,37 +76,18 @@ input:focus {
 
 /* LEADERBOARD SECTION */
 .lboard_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2% 10%;
-}
-.lboard_period {
-    display: grid;
-    justify-items: center;
-}
-.lboard_period li {
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    list-style: none;
-}
-.lboard_period li:hover {
-    color: #F6AF37;
-    border-bottom: 2px solid #F6AF37;
-}
-.period--active {
-    border-bottom: 2px solid #F6AF37;
+    padding: 2% 5%;
 }
 .lboard_main {
     background: rgba(184, 200, 218, 0.2);
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 .lboard_main_heading {
     margin-bottom: 50px;
     text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
 }
 .lboard_main_title {
     display: grid;
@@ -114,6 +95,7 @@ input:focus {
     border-bottom: 1px solid #C4C4C4;
     margin-bottom: 30px;
     padding: 10px;
+    font-weight: 500;
 }
 .lboard_main_list {
     display: grid;
@@ -126,6 +108,11 @@ input:focus {
     background: rgba(184, 200, 218, 0.5);
     border-radius: 10px;
     padding: 10px;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+.lboard_main_item:hover {
+    transform: scale(1.02);
 }
 .lboard_main_item .position {
     padding: 20px;
@@ -152,28 +139,3 @@ input:focus {
     margin-left: 10px;
 }
 
-/* Animation for Top 3*/
-.pos1 {
-    animation-name: pos_one;
-    animation-duration: 3s; 
-}
-@keyframes pos_one {
-    from {background-color: #F6AF37;}
-    to {background-color: gold; }
-}
-.pos2 {
-    animation-name: pos_two;
-    animation-duration: 3s; 
-}
-@keyframes pos_two {
-    from {background-color: #BEBBBB;}
-    to {background-color: silver; }
-}
-.pos3 {
-    animation-name: pos_three;
-    animation-duration: 3s; 
-}
-@keyframes pos_three {
-    from {background-color: #B2967A;}
-    to {background-color: brown; }
-}

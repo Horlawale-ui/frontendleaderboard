@@ -8,12 +8,16 @@
 
     <!-- LINKS -->
     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
 
     <!-- TITLE -->
     <title>HNG Leaderboard</title>
 </head>
 
 <body>
+    <!-- HEADING -->
     <div class="heading">
         <img src="img/logo.png" alt="hng_logo">
         <span>
@@ -21,49 +25,38 @@
                 <p>Changing the world one intern at a time</p>
             </span>
     </div>
-
-    <div class="lboard">
+ <!-- LEADERBOARD -->
+ <div class="lboard">
         <div class="lboard_content">
-            <ul class="lboard_period">
-                <li class="period--active">Today</li>
-                <li>Yesterday</li>
-                <li>June 21</li>
-            </ul>
             <div class="lboard_main">
                 <div class="lboard_main_heading">
                     <h2>Leaderboard</h2>
                 </div>
                 <div id="users">
-                  <input class="search" placeholder="Search" />
-                    <button class="sort" data-sort="slack-username">
+                    <input class="search" placeholder="Search" />
+                    <button class="sort" id="sort_by_name">
                         Sort by Name
                     </button>
-                    <button class="sort" data-sort="point">
+                    <button class="sort" id="sort_by_points">
                         Sort by Point
                     </button>
-                <div class="lboard_main_title">
-                    <span>Position</span>
-                    <span>Names</span>
-                    <span>Slack username</span>
-                    <span>Points</span>
-                    <span>Share</span>
-                </div>
-                <div class="lboard_main_list">
-                    <!-- will be added from JSON -->
+                    <div class="lboard_main_title">
+                        <span>Position</span>
+                        <span>Names</span>
+                        <span>Slack username</span>
+                        <span>Points</span>
+                        <span>Share</span>
+                    </div>
+                    <div class="lboard_main_list">
+                        <!-- will be added from JSON -->
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
     </div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-    <script>
-      var options = {
-          valueNames: [ 'slack-username', 'point' ]
-        };
-          var userList = new List('users', options);
-    </script>
+
     <script src="bundle.js"></script>
-    
+
 </body>
 
 </html>

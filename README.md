@@ -1,2 +1,2 @@
-# frontendleaderboard
-frontend leader board 
+# HNG Leaderboard
+ A Leaderboard for HNG Intern
