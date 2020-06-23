@@ -1,2 +1,2 @@
-# FullStack leaderboard
-Hng leader board 
+# HNG Leaderboard
+ A Leaderboard for HNG Intern
