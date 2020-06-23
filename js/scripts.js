@@ -10,6 +10,8 @@ var points_asc = true;
 
 var entries = [];
 
+var leaderboard = "https://elated-bassi-233ae4.netlify.app/";
+
 function fetchEntries() {
     const url = "https://spreadsheets.google.com/feeds/list/17_1B-7knKNEe76EKSwrPaucg9wx36L8HowSiLQz_Pxc/od6/public/values?alt=json";
 
@@ -65,7 +67,7 @@ function sortByPoints() {
                     <p class="slack-username">${entry.username}</p>
                     <p class="point">${entry.points}</p>
                     <div class="share">
-                        <a href="https://twitter.com/intent/tweet?text=Hey!%20I%20am%20ranked%20number%20${index}%20on%20the%20current%20@hnginternship%20board%20with%20${entry.points}%20points."><img src="img/Vector.png" alt=""></a>
+                        <a href="https://twitter.com/intent/tweet?text=Hey!%20I%20am%20ranked%20number%20${index}%20on%20the%20current%20%40hnginternship%20board%20with%20${entry.points}%20points.%0ACheck%20the%20leaderboard%20here:%20${leaderboard}.%0A%23hng%20%23HNGi7%20%23HNGinternship"><img src="img/Vector.png" alt=""></a>
                     </div>
                 </div>
             `
@@ -115,7 +117,7 @@ function sortByNames() {
                     <p class="slack-username">${entry.username}</p>
                     <p class="point">${entry.points}</p>
                     <div class="share">
-                        <a href="https://twitter.com/intent/tweet?text=Hey!%20I%20am%20ranked%20number%20${index}%20on%20the%20current%20@hnginternship%20board%20with%20${entry.points}%20points."><img src="img/Vector.png" alt=""></a>
+                        <a href="https://twitter.com/intent/tweet?text=Hey!%20I%20am%20ranked%20number%20${index}%20on%20the%20current%20%40hnginternship%20board%20with%20${entry.points}%20points.%0ACheck%20the%20leaderboard%20here:%20${leaderboard}.%0A%23hng%20%23HNGi7%20%23HNGinternship"><img src="img/Vector.png" alt=""></a>
                     </div>
                 </div>
             `
